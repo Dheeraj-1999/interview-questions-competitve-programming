@@ -26,9 +26,11 @@ int minCoinChange(int* input, int n, int value, int* dp) {
             int opt = minCoinChange(input, n, value-input[k], dp);
             mini = min(mini, opt+1); // which coin pattern is giving minimum coin change
         }
+        cout << value - input[k] << " " << mini << endl;
     }
     
     dp[value] = mini;
+    return mini;
 }
 
 int minCoinChangeDp(int* input, int n, int value) {
@@ -60,12 +62,20 @@ int main(int argc, char const *argv[])
     int n;
     cin>>n;
     int* deno = new int[n+1];
+    
     for(int i=0; i<n; i++)
         cin >> deno[i];
     int value;
     cin >> value;
 
-    minCoinChangeDp(deno, n, value);
+    int* dp = new int[value+1]();
+    
+    // minCoinChangeDp(deno, n, value);
+    cout << minCoinChange(deno, n, value, dp);
+
+    // for(int i=0; i<value; i++) {
+    //     cout << dp[i] << " ";
+    // }
 
     return 0;
 }
