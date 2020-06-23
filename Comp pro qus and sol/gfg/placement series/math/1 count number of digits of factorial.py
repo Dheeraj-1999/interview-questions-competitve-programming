@@ -23,4 +23,13 @@ def countDigitOpt(n):
     ans = math.log10(n) + 1
     return((ans))
 
-print(math.floor(countDigitOpt(n)))
+
+def countDigitFact(n):
+    digits = 0
+    for i in range(2, n+1):
+        digits += math.log10(i)
+        print(digits, end = ' ')
+    print()
+    return(digits) 
+
+print(math.floor(countDigitFact(n)))
