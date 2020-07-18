@@ -97,7 +97,7 @@ int main(int argc, char const *argv[])
         for(int i=0; i<n+1; i++) {
             dp[i] = new int[n+1]();
         }
-        cout << endl << knapSackDp(weight, w, n, val);
+        cout << endl << knapSack(weight, w, n, val);
     }
     return 0;
 }

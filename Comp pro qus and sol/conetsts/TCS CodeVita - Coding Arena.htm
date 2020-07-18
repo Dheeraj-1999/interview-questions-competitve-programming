@@ -1,0 +1,1035 @@
+<!-- <script src="./JS/jquery1.9.js" charset="UTF-8"></script>-->
+<!-- <script src="./JS/jquery-ui.min.js"></script> -->
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script async="" src="TCS%20CodeVita%20-%20Coding%20Arena_files/analytics.js"></script><script async="" src="TCS%20CodeVita%20-%20Coding%20Arena_files/analytics.js"></script><script src="TCS%20CodeVita%20-%20Coding%20Arena_files/jquery-3.js" type="text/javascript"></script>
+
+
+ 
+<script src="TCS%20CodeVita%20-%20Coding%20Arena_files/google_analytics.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-52806117-1', 'auto');
+	  ga('send', 'pageview');
+</script>
+
+
+
+
+
+	
+		<link href="TCS%20CodeVita%20-%20Coding%20Arena_files/jquery.css" rel="stylesheet" type="text/css">
+        <link href="TCS%20CodeVita%20-%20Coding%20Arena_files/tagit.css" rel="stylesheet" type="text/css"> 
+		<script>
+			
+				window.endTime = 'July 17, 2020 23:36:8';
+			
+		</script>	
+         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+		<!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="JS/code_editor/tag-it.js" type="text/javascript" charset="utf-8"></script> -->
+		<style>
+		p#quiz-response{font-size:medium;}
+		p#question{font-size:medium;}
+		</style>
+	</head>
+	<body>
+		<link rel="stylesheet" href="TCS%20CodeVita%20-%20Coding%20Arena_files/main_page.css">
+		
+
+
+<link rel="stylesheet" href="TCS%20CodeVita%20-%20Coding%20Arena_files/header.css">
+<header class="header">
+	<div class="left_pane">
+		<img src="TCS%20CodeVita%20-%20Coding%20Arena_files/cv_logo.png" style="width: 160px">
+	</div>
+	<div class="right_pane">
+		<span class="name">dheeraj nagpal</span>
+		<a href="https://www.tcscodevita.com/CodevitaV9/logout.jsp"><img src="TCS%20CodeVita%20-%20Coding%20Arena_files/logout.png"></a>
+	</div>
+</header>
+
+		<div class="main-container">
+			<div class="section side-content">
+				<div class="timer">
+					<span class="num" id="hour" style="display: inline-block;">01</span><span class="desc" style="display: inline-block;">Hr</span>
+					<span class="num" id="minute" style="display: inline-block;">43</span><span class="desc" style="display: inline-block;">Min</span>
+					<span class="num" id="second" style="display: inline-block;">23</span><span class="desc" style="display: inline-block;">Sec</span>
+				</div>
+
+
+
+				<ul class="navigation">
+					
+					<li id="guidelines" style="display: block;">Guidelines</li>
+					
+						<li id="coding_area" style="display: block;" class="active">Coding Area</li>	
+					
+					<li id="compile_run" style="display: block;">Public Testcase Submissions </li>
+					<li id="submissions" style="display: block;">Private Testcase Submissions</li>
+					
+					<!--  Added by Nisha for showing unevaluated & history submissions begin -->
+					<li id="unevaluated" style="display: block;">Unevaluated Submissions</li>
+					
+					<!--  Added by Nisha for showing unevaluated & history submissions end -->
+					<li id="feedback" style="display: block;">Feedback Form</li>
+					
+					<!-- <li id="msg">Messages</li>   -->
+					
+				</ul>
+
+				<ul class="navigation">
+					<!-- <li id="selfHelpQuiz">Self-Help Trivia <span style="color:red;">(New)</span></li>-->
+					<li style="display: block;"><div id="graphs" onclick="launchReport()">Graphs</div></li>
+				</ul>
+			</div>
+			<div class="section main-content" style="min-height: 500px">
+				<h1 id="the-heading">Coding Area</h1>
+				<div id="main-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>TCS: CodeVita - Coding Arena</title>
+	<script type="text/javascript" src="TCS%20CodeVita%20-%20Coding%20Arena_files/jquery-2.js"></script>
+	<script type="text/javascript" src="TCS%20CodeVita%20-%20Coding%20Arena_files/main_script.js"></script>
+	<link rel="stylesheet" href="TCS%20CodeVita%20-%20Coding%20Arena_files/notifications.css">
+<script src="TCS%20CodeVita%20-%20Coding%20Arena_files/notifications.js"></script>
+	
+	<link href="TCS%20CodeVita%20-%20Coding%20Arena_files/jquery.css" rel="stylesheet" type="text/css">
+        <link href="TCS%20CodeVita%20-%20Coding%20Arena_files/tagit.css" rel="stylesheet" type="text/css">
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="TCS%20CodeVita%20-%20Coding%20Arena_files/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="TCS%20CodeVita%20-%20Coding%20Arena_files/tag-it.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css"> -->
+		<script type="text/javascript">
+		    $(document).ready(function() {
+				
+				/*$.getScript( "JS/jquery-ui.min.js" )
+				  .done(function( script, textStatus ) {
+					console.log( "Status for JS/jquery.ui.min.js="+textStatus );
+				  })
+				  .fail(function( jqxhr, settings, exception ) {
+					console.log( "Triggered ajaxError handler." );
+				});*/
+				
+		    	//initializeAttributionsUIOnMainPage();
+		    });
+			
+			//Below code by Mitul to disable Left Click (ultimately inspect element) and disable firebug (F12)
+			/*$(document).keydown(function(event){
+				if(event.keyCode==123){
+				alert('F12 is disabled');
+					return false;
+				}
+				else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+					alert('This is disabled');
+					return false;
+				}
+			});
+
+			$(document).on("contextmenu",function(e){        
+			   alert('right click is disabled');
+			   e.preventDefault();
+			});*/
+		</script>
+		
+
+	
+
+
+
+
+
+<div class="module">
+	<span class="open-code-editor" onclick="openCodeEditor(this)" style="display: inline-block;">Online Editor (<span id="editor-question">A</span>)</span>
+<!-- Code by Shubham (STARTS) -->
+	
+
+<!-- Code by Shubham (ENDS) -->
+
+
+
+<div class="question_selectors tab-selectors" style="grid-template-columns: repeat(6, 1fr);">
+	
+		<div class="question_selector tab-selector active" id="A" onclick="SelectProblem(this)">
+			A
+		</div>
+		
+	
+		<div class="question_selector tab-selector" id="B" onclick="SelectProblem(this)">
+			B
+		</div>
+		
+	
+		<div class="question_selector tab-selector" id="C" onclick="SelectProblem(this)">
+			C
+		</div>
+		
+	
+		<div class="question_selector tab-selector" id="D" onclick="SelectProblem(this)">
+			D
+		</div>
+		
+	
+		<div class="question_selector tab-selector" id="E" onclick="SelectProblem(this)">
+			E
+		</div>
+		
+	
+		<div class="question_selector tab-selector" id="F" onclick="SelectProblem(this)">
+			F
+		</div>
+		
+	
+</div><div class="tab-selector-pointer"><div class="pointer" style="width: 16.6667%; left: 0%;"></div></div>
+
+
+
+<div class="tabs">
+				
+	
+	<div class="question_container tab active" id="A" style="opacity: 1; display: block;">
+		<p></p>
+
+<h2 id="problemname">Swayamvar</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  
+<h3 id="hexample">Examples</h3>
+<p id="example"></p>
+-->
+
+
+
+
+
+
+	<div class="heading-tab active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="#333" stroke-width="3" d="M12 12h8"></path><path stroke="#333" stroke-width="3" d="M12 12h-8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v-8"></path></svg><h3>Problem Description</h3></div><div class="content-tab" style="opacity: 1;"><p id="problemdesc"></p><p>A
+ ceremony where a Bride chooses her Groom from an array of eligible 
+bachelors is called Swayamvar. But this is a Swayamvar with difference. 
+An array of Bride-to-be will choose from an array of Groom-to-be.</p><p></p><p>The arrangement at this Swayamvar is as follows</p><p class="list_Paragraph">·
+ Brides-to-be are organized such that the most eligible bachelorette 
+will get first chance to choose her Groom. Only then, the next most 
+eligible bachelorette will get a chance to choose her Groom</p><p class="list_Paragraph">·
+ If the initial most eligible bachelorette does not get a Groom of her 
+choice, none of the Brides-to-be have any chance at all to get married. 
+So unless a senior bachelorette is out of the “queue”, the junior 
+bachelorette does not get a chance to select her Groom-to-be</p><p class="list_Paragraph">·
+ Inital state of Grooms-to-be is such that most eligible bachelor is at 
+the head of the “queue”. The next most eligible bachelor is next in the 
+queue. So on and so forth.</p><p class="list_Paragraph">· Now everything
+ hinges on the choice of the bachelorette. The most eligible 
+bachelorette will now meet the most eligible bachelor.</p><p class="list_Paragraph">·
+ If bachelorette selects the bachelor, both, the bachelorette and the 
+bachelor are now Bride and Groom respectively and will no longer be a 
+part of the Swayamvar activity. Now, the next most eligible bachelorette
+ will get a chance to choose her Groom. Her first option is the next 
+most eligible bachelor (relative to initial state)</p><p class="list_Paragraph">·
+ If the most eligible bachelorette passes the most eligible bachelor, 
+the most eligible bachelor now moves to the end of the queue. The next 
+most eligible bachelor is now considered by the most eligible 
+bachelorette. Selection or Passing over will have the same consequences 
+as explained earlier.</p><p class="list_Paragraph">· If most eligible bachelorette reaches the end of bachelor queue, then the Swayamvar is over. Nobody can get married.</p><p class="list_Paragraph">· Given a mix of Selection or Passing over, different pairs will get formed.</p><p></p><p>The selection criteria is as follows</p><p class="list_Paragraph">1. Each person either drinks rum or mojito. Bride will choose groom only if he drinks the same drink as her. </p><p> <b>Note</b> : There are equal number of brides and grooms for the swayamvar. </p><p>Tyrion as the hand of the king wants to know how many pairs will be left unmatched. Can you help Tyrion?</p><p></p></div><div class="heading-tab active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="#333" stroke-width="3" d="M12 12h8"></path><path stroke="#333" stroke-width="3" d="M12 12h-8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v-8"></path></svg><h3 id="hconst">Constraints</h3></div><div class="content-tab" style="opacity: 1;"><p id="const"></p><p>1&lt;= N &lt;= 10^4</p><p></p></div><div class="heading-tab active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="#333" stroke-width="3" d="M12 12h8"></path><path stroke="#333" stroke-width="3" d="M12 12h-8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v-8"></path></svg><h3 id="hinput">Input Format</h3></div><div class="content-tab" style="opacity: 1;"><p id="input"></p><p>First
+ line contains one integer N, which denotes the number of brides and 
+grooms taking part in the swayamvar. Second line contains a string in 
+lowercase, of length N containing initial state of brides-to-be. Third 
+line contains a string in lowercase, of length N containing initial 
+state of grooms-to-be. Each string contains only lowercase 'r' and 'm' 
+stating person at that index drinks "rum"(for 'r') or mojito(for 'm').</p><p></p></div><div class="heading-tab active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="#333" stroke-width="3" d="M12 12h8"></path><path stroke="#333" stroke-width="3" d="M12 12h-8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v-8"></path></svg><h3 id="houtput">Output</h3></div><div class="content-tab" style="opacity: 1;"><p id="output"></p><p>Output a single integer denoting the number of pairs left unmatched.</p><p></p></div><div class="heading-tab active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="#333" stroke-width="3" d="M12 12h8"></path><path stroke="#333" stroke-width="3" d="M12 12h-8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v-8"></path></svg><h3 id="htestcase">Timeout</h3></div><div class="content-tab" style="opacity: 1;"><p>1</p></div><div class="heading-tab active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="#333" stroke-width="3" d="M12 12h8"></path><path stroke="#333" stroke-width="3" d="M12 12h-8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v8"></path><path class="plus" stroke="#333" stroke-width="3" d="M12 12v-8"></path></svg><h3 id="hexplanation">Explanation</h3></div><div class="content-tab" style="opacity: 1;"><p id="explanation"></p><p>Example 1</p><p>Input</p><p>4</p><p>rrmm mrmr</p><p>Output</p><p>0</p><p>Explanation</p><p>The
+ bride at first place will only marry groom who drinks rum. So the groom
+ at first place will join the end of the queue. Updated groom's queue is
+ "rmrm".</p><p>Now the bride at first place will marry the groom at first place. Updated bride's queue is "rmm" and groom's queue is "mrm".</p><p>The process continues and at last there are no pairs left. So answer is 0.</p><p></p><p>Example 2</p><p>Input</p><p>4</p><p> rmrm mmmr</p><p>Output</p><p>2</p><p>Explanation</p><p>Following
+ the above process 2 pairs will be left unmatched. Remember that bride 
+will not move until she gets a groom of her choice.</p><p></p><p></p><p></p></div></div>	
+	
+				
+	
+	<div class="question_container tab" id="B" style="opacity: 0; display: none;">
+		<p></p>
+
+<h2 id="problemname">Digit Pairs</h2>
+
+
+
+
+<h3>Problem Description</h3>
+<p id="problemdesc"></p><p></p><p>Given N three-digit numbers, your task
+ is to find bit score of all N numbers and then print&nbsp;the number of
+ pairs possible based on these calculated bit score.</p><p></p><p class="list_Paragraph">1. <b>Rule for calculating bit score from three digit number:</b> </p><p>From the 3-digit number, </p><p class="list_Paragraph">· extract largest digit and multiply by 11 then </p><p class="list_Paragraph">· extract smallest digit multiply by 7 then</p><p class="list_Paragraph">· add both the result for getting bit pairs.</p><p>Note: - Bit score should be of 2-digits, if above results in a 3-digit bit score, simply ignore most significant digit.</p><p>Consider following examples: </p><p>Say, number is 286</p><p>Largest digit is 8 and smallest digit is 2</p><p>So, 8*11+2*7 =102 so ignore most significant bit , So bit score = 02.</p><p>Say, Number is 123</p><p>Largest digit is 3 and smallest digit is 1</p><p>So, 3*11+7*1=40, so bit score is 40.</p><p></p><p class="list_Paragraph">2. <b>Rules for making pairs from above calculated bit scores</b> </p><p>Condition for making pairs are</p><p class="list_Paragraph">· Both bit scores should be in&nbsp;either odd position or even position to be eligible to form a pair.</p><p class="list_Paragraph">·
+ Pairs can be only made if&nbsp;most significant digit&nbsp;are same 
+and&nbsp;at most two pair can be made&nbsp;for a given significant 
+digit.</p><p></p><p></p>
+
+<h3 id="hconst">Constraints</h3>
+<p id="const"></p><p>N&lt;=500</p><p></p>
+
+<h3 id="hinput">Input Format</h3>
+<p id="input"></p><p>First line contains an integer N, denoting the count of numbers.</p><p>Second line contains N 3-digit integers delimited by space</p><p></p><p></p>
+
+<h3 id="houtput">Output</h3>
+<p id="output"></p><p>One integer value denoting the number of bit pairs.</p><p></p>
+<!--  
+<h3 id="hexample">Examples</h3>
+<p id="example"></p>
+-->
+<h3 id="htestcase">Timeout</h3>
+<p>1</p>
+<h3 id="hexplanation">Explanation</h3>
+<p id="explanation"></p><p>Example 1</p><p>Input</p><p> <a name="_GoBack"></a>8 234 567 321 345 123 110 767 111</p><p>Output</p><p>3</p><p>Explanation</p><p>After
+ getting the most and least significant digits of the numbers and 
+applying the formula given in Rule 1 we get the bit scores of the 
+numbers as: </p><p>58 12 40 76 40 11 19 18</p><p>No. of pair possible are 3:</p><p>40 appears twice at odd-indices 3 and 5 respectively. Hence, this is one pair. </p><p>12, 11, 18 are at even-indices. Hence, two pairs are possible from these three-bit scores.</p><p>Hence total pairs possible is 3</p><p></p>
+
+	</div>	
+	
+				
+	
+	<div class="question_container tab" id="C" style="opacity: 0; display: none;">
+		<p></p>
+
+<h2 id="problemname">Dole Out Cadbury</h2>
+
+
+
+
+<h3>Problem Description</h3>
+<p id="problemdesc"></p><p>You are a teacher in reputed school. During 
+Celebration Day you were assigned a task to distribute Cadbury such that
+ maximum children get the chocolate. You have a box full of Cadbury with
+ different width and height. You can only distribute largest square 
+shape Cadbury. So if you have a Cadbury of length 10 and width 5, then 
+you need to break Cadbury in 5X5 square and distribute to first child 
+and then remaining 5X5 to next in queue</p><p></p><p></p>
+
+<h3 id="hconst">Constraints</h3>
+<p id="const"></p><p>0&lt;P&lt;Q&lt;1501</p><p>0&lt;R&lt;S&lt;1501</p><p></p><p></p>
+
+<h3 id="hinput">Input Format</h3>
+<p id="input"></p><p>First line contains an integer P that denotes minimum length of Cadbury in the box</p><p>Second line contains an integer Q that denotes maximum length of Cadbury in the box</p><p>Third line contains an integer R that denotes minimum width of Cadbury in the box</p><p> <a name="_GoBack"></a>Fourth line contains an integer S that denotes maximum width of Cadbury in the box</p><p></p><p></p>
+
+<h3 id="houtput">Output</h3>
+<p id="output"></p><p>Print total number of children who will get chocolate.</p><p></p>
+<!--  
+<h3 id="hexample">Examples</h3>
+<p id="example"></p>
+-->
+<h3 id="htestcase">Timeout</h3>
+<p>1</p>
+<h3 id="hexplanation">Explanation</h3>
+<p id="explanation"></p><p>Example 1</p><p>Input</p><p class="normal_(Web)">5</p><p class="normal_(Web)">7</p><p class="normal_(Web)">3</p><p class="normal_(Web)">4</p><p>Output</p><p>24</p><p>Explanation</p><p class="normal_(Web)">Length is in between 5 to 7 and width is in between 3 to 4.</p><p class="normal_(Web)">So we have 5X3,5X4,6X3,6X4,7X3,7X4 type of Cadbury in the box.</p><p class="normal_(Web)"></p><p class="normal_(Web)">If we take 5X3 :</p><p class="normal_(Web)">First,
+ we can give 3X3 square Cadbury to 1st child .Then we are left with 3X2.
+ Now largest square is 2X2 which will be given to next child. Next, we 
+are left with two&nbsp; 1X1 part of Cadbury which will be given to 
+another two children.</p><p class="normal_(Web)">And so on</p><p></p>
+
+	</div>	
+	
+				
+	
+	<div class="question_container tab" id="D" style="opacity: 0; display: none;">
+		<p></p>
+
+<h2 id="problemname">Petrol Pump</h2>
+
+
+
+
+<h3>Problem Description</h3>
+<p id="problemdesc"></p><p>A big group of students, starting a long journey on different set of vehicles need to fill petrol in their vehicles.</p><p>As
+ group leader you are required to minimize the time they spend at the 
+petrol pump to start the journey at the earliest. You will be given the 
+quantity of petrol (in litres) that can be filled in each vehicle. There
+ are two petrol vending machines at the petrol pump. You need to arrange
+ the vehicles in such a way that they take shortest possible time to 
+fill all the vehicles and provide the time taken in seconds as output. 
+Machine vends petrol @ 1litre/second.</p><p>Assume that there is no time lost between switching vehicles to start filling petrol.</p><p></p>
+
+<h3 id="hconst">Constraints</h3>
+<p id="const"></p><p>1&lt;= Number of vehicles &lt; 50.</p><p>0 &lt;= Quantity of petrol required in any vehicle &lt;= 200 </p><p></p>
+
+<h3 id="hinput">Input Format</h3>
+<p id="input"></p><p>First line will provide the quantity of petrol (separated by space) that can be filled in each vehicle.</p><p></p>
+
+<h3 id="houtput">Output</h3>
+<p id="output"></p><p>Shortest possible time to fill petrol in all the vehicles.</p><p></p>
+<!--  
+<h3 id="hexample">Examples</h3>
+<p id="example"></p>
+-->
+<h3 id="htestcase">Timeout</h3>
+<p>1</p>
+<h3 id="hexplanation">Explanation</h3>
+<p id="explanation"></p><p>Example 1</p><p>Input</p><p>1 2 3 4 5 10 11 3 6 16</p><p>Output</p><p>31</p><p>Explanation</p><p>First Petrol vending machine will cater to vehicles taking - 16, 6, 4, 3, 2 litres of petrol (Total 31 sec)</p><p>Second machine will cater to vehicles taking - 11, 10, 5, 3, 1 litres of petrol (Total 30 sec)</p><p>Example 2</p><p>Input</p><p>25 30 35 20 90 110 45 70 80 12 30 35 85</p><p>Output</p><p>335</p><p>Explanation</p><p>First Petrol vending machine will cater to vehicles taking - 80, 45, 35, 30, 25, 12, 85, 20 litres of petrol.</p><p>Second
+ machine will cater to vehicles taking - 90, 70, 35, 30, 110 litres of 
+petrol. Since second machine will take more time, total time to fill 
+petrol in all vehicles will be 335 seconds.</p><p></p>
+
+	</div>	
+	
+				
+	
+	<div class="question_container tab" id="E" style="opacity: 0; display: none;">
+		<p></p>
+
+<h2 id="problemname">Grooving Monkeys</h2>
+
+
+<p class="MsoNormal"><span style="font-family: Verdana"></span></p><p class="body_Text" id="introtext"></p><p>N monkeys are invited to a party where they start dancing.</p><p></p><o:p></o:p><p></p>
+
+<button class="view_problem" onclick="ViewProblem(this)">View Full Problem</button>
+
+
+	</div>	
+	
+				
+	
+	<div class="question_container tab" id="F" style="opacity: 0; display: none;">
+		<p></p>
+
+<h2 id="problemname">Death Battle</h2>
+
+
+<p class="MsoNormal"><span style="font-family: Verdana"></span></p><p class="body_Text" id="introtext"></p><p>In a crossover fantasy universe, Houin Kyoma is up against in a battle with a powerful monster Nomu.</p><p></p><o:p></o:p><p></p>
+
+<button class="view_problem" onclick="ViewProblem(this)">View Full Problem</button>
+
+
+	</div>	
+	
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="file_upload_container module" id="file-upload-section">
+	<h2>Upload Solution [ Question : <span class="question-character-span">A</span> ]</h2>
+	<span class="upload_section">
+		<div class="self_agreement">
+			<input id="self_proclamation" type="checkbox">
+			<label for="self_proclamation">I, <strong>dheeraj nagpal</strong> confirm that the answer submitted is my own.</label>
+		</div>
+		<input type="file" id="tempID" class="actual_solution_upload_input" disabled="disabled">
+		<label for="tempID" style="max-height:20px">Choose a File ...</label>
+		<button id="submit_solution" disabled="disabled" onclick="submitSolution()">Submit Solution</button>
+		<div class="extension_container disabled">
+			<span>Select your Language :</span>
+			<select id="extension"></select>
+		</div>
+		<span class="submission_status">
+
+		</span>
+	</span>
+	<span class="attribution_section_container disabled">
+		<div class="attribution_section" style="grid-column: span 2; padding: 5px 0 10px 0">
+			<input type="checkbox" id="attributions">
+			<label for="attributions">Took help from online sources (attributions)</label>			
+		</div>
+		<div class="attribution_section text">
+			<label>Links (Copy paste / Drag-Drop from source window): </label>
+			
+			<ul id="links" class="tagit ui-widget ui-widget-content ui-corner-all"><li class="tagit-new"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="ui-widget-content ui-autocomplete-input" autocomplete="off"></li><li class="tagit-new"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="ui-widget-content ui-autocomplete-input" autocomplete="off"></li></ul>
+		</div>
+		<div class="attribution_section text">
+			<label>Comments : </label>
+			<textarea id="comments"></textarea>
+		</div>
+	</span>
+</div>
+
+
+<div id="secondary-space" style="display:none">
+	<h2>Upload Solution [ Question : <span class="question-character-span">A</span> ]</h2>
+	<span class="upload_section">
+		<div class="self_agreement">
+			<input id="self_proclamation" type="checkbox">
+			<label for="self_proclamation">I, <strong>dheeraj nagpal</strong> confirm that the answer submitted is my own.</label>
+		</div>
+		<input type="file" id="tempID" class="actual_solution_upload_input" disabled="disabled">
+		<label for="tempID" style="max-height:20px">Choose a File . . .</label>
+		<button id="submit_solution" disabled="disabled" onclick="submitSolution()">Submit Solution</button>
+		<div class="extension_container disabled">
+			<span>Select your Language :</span>
+			<select id="extension"></select>
+		</div>
+		<span class="submission_status">
+
+		</span>
+	</span>
+	<span class="attribution_section_container disabled">
+		<div class="attribution_section" style="grid-column: span 2; padding: 5px 0 10px 0">
+			<input type="checkbox" id="attributions">
+			<label for="attributions">Took help from online sources (attributions)</label>			
+		</div>
+		<div class="attribution_section text">
+			<label>Links (Copy paste / Drag-Drop from source window): </label>
+			
+			<ul id="links" class="tagit ui-widget ui-widget-content ui-corner-all"><li class="tagit-new"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="ui-widget-content ui-autocomplete-input" autocomplete="off"></li></ul>
+		</div>
+		<div class="attribution_section text">
+			<label>Comments : </label>
+			<textarea id="comments"></textarea>
+		</div>
+	</span>
+</div>
+
+<div class="secondary-space" id="secondary-notification-space" style="display:none">
+	<div class="submission_notification success">
+		<div class="graphic"><img src="TCS%20CodeVita%20-%20Coding%20Arena_files/happy.svg"><div class="short-msg"></div></div>
+		<div class="info">
+			<h2></h2>
+			<div class="actions">
+				<div class="other-info"></div>
+				<div class="buttons"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+/*
+* Initialization Code
+* Author: Ashik A
+*/
+$(document).ready(function(){
+	window.endTime = 'July 17, 2020 23:36:8';
+	 window.timeLeft = 10;
+
+	initializeTabs();
+	var status = window.sessionStorage.getItem('latest_status');
+	if(status != undefined ||status != null){
+		status = JSON.parse(status);
+		if(status.type.localeCompare('error') == 0) {
+			setSubmissionPanel(true,null);
+		}
+		else{
+			setSubmissionPanel(false, window.sessionStorage.getItem('latest_status'));
+		}
+	}
+	else{
+		setSubmissionPanel(true,null);
+	}
+
+	var radio_val = '';
+	if (radio_val == '') {
+		radio_val = parseInt('0');
+	}
+	else radio_val = parseInt(radio_val);
+	console.log(window.sessionStorage.getItem('visited_question'));
+	if(window.sessionStorage.getItem('visited_question') == null || window.sessionStorage.getItem('visited_question') == undefined){
+		 $('.question_selectors #'+(String.fromCharCode(65 + radio_val))+'.question_selector').click();
+	}
+	else {
+		$('.question_selectors #'+window.sessionStorage.getItem('visited_question').trim()+'.question_selector').click();
+	}
+	
+	initializeAttributionsUIOnMainPage();
+});
+
+</script>
+
+
+
+</div>
+			</div>
+		</div>
+
+		
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="TCS%20CodeVita%20-%20Coding%20Arena_files/mod_footer_css.css">
+    <link rel="icon" href="https://www.tcscodevita.com/CodevitaV9/images/favicon.ico" type="image/x-icon">
+    <title>Footer</title>
+    <style>
+    	.bg-cc {
+		    width: 842px; height: 595px;
+		    background: url('images/footer/css_sprites_footer.png') -10px -10px;
+		}
+		.bg-email {
+		    width: 38px; height: 37px;
+		    background: url('images/footer/css_sprites_footer.png') -570px -625px;
+		}
+		.bg-facebook {
+		    width: 38px; height: 37px;
+		    background: url('images/footer/css_sprites_footer.png') -628px -625px;
+		}
+		.bg-googleplus {
+		    width: 38px; height: 37px;
+		    background: url('images/footer/css_sprites_footer.png') -686px -625px;
+		}
+		.bg-instagram {
+		    width: 38px; height: 37px;
+		    background: url('images/footer/css_sprites_footer.png') -744px -625px;
+		}
+		.bg-linkedin {
+		    width: 38px; height: 37px;
+		    background: url('images/footer/css_sprites_footer.png') -802px -625px;
+		}
+		.bg-tcs_logo {
+		    width: 480px; height: 67px;
+		    background: url('images/footer/css_sprites_footer.png') -10px -625px;
+		}
+		.bg-twitter {
+		    width: 38px; height: 37px;
+		    background: url('images/footer/css_sprites_footer.png') -10px -712px;
+		}
+		.bg-Up_Button {
+		    width: 40px; height: 40px;
+		    background: url('images/footer/css_sprites_footer.png') -510px -625px;
+		}
+		.bg-youtube {
+		    width: 38px; height: 37px;
+		    background: url('images/footer/css_sprites_footer.png') -68px -712px;
+		}
+    </style>
+
+
+    <footer class="footer">
+        <div class="left_pane">
+            <!-- <a class="link">About CodeVita</a> -->
+            <a href="https://www.tcscodevita.com/CodevitaV9/faqs.jsp" target="_blank" class="link">CodeVita FAQs</a>
+            <a href="https://www.tcscodevita.com/CodevitaV9/codevitablog.jsp" target="_blank" class="link">About CodeVita</a>
+            <a href="https://www.tcscodevita.com/CodevitaV9/privacypolicy.jsp" target="_blank" class="link">Privacy Policy</a>
+            <a rel="noopener" href="https://www.tcs.com/" target="_blank" class="link">Careers</a>
+            <span class="copyright">© 2020 Tata Consultancy Services Limited. All Rights Reserved. </span>
+        </div>
+        <div class="right_pane">
+            <div class="connections">
+                <span>CONNECT WITH US</span>
+                <a rel="noopener" class="connect_link" href="https://www.facebook.com/TataConsultancyServices/posts/10157362344326250" target="_blank"><div class="bg-facebook"></div></a>
+                <a rel="noopener" class="connect_link" href="https://www.linkedin.com/posts/tata-consultancy-services_codevita-activity-6565822490248089600-C9vx" target="_blank"><div class="bg-linkedin"></div></a>
+                <a rel="noopener" class="connect_link" href="https://www.instagram.com/p/B0-gsyVHUxS/?utm_source=ig_web_copy_link" target="_blank"><div class="bg-instagram"></div></a>
+                <a rel="noopener" class="connect_link" href="https://twitter.com/People_TCS/status/1160056721177337858" target="_blank"><div class="bg-twitter"></div></a>
+                <!-- <a class="connect_link" href="https://www.youtube.com/channel/UCaHyiyvJp4hhPNhIU7r9uqg" target="_blank"><img src="./images/footer/youtube.png" alt="Youtube"></a> -->
+                <a rel="noopener" class="connect_link" href="https://youtu.be/s0_DKfmer-Y" target="_blank"><div class="bg-youtube"></div></a>
+                <!-- <a class="connect_link"><img src="./images/footer/googleplus.png" alt="Google +"></a>
+                <a class="connect_link"><img src="./images/footer/email.png" alt="Email"></a> -->
+            </div>
+            <div>
+                <span class="logo"><a href="http://www.tata.com/" target="_blank"></a><img src="TCS%20CodeVita%20-%20Coding%20Arena_files/tcs_logo.png" style="width: 280px;margin-bottom: 5px"></span>
+                <span class="logo"><img src="TCS%20CodeVita%20-%20Coding%20Arena_files/cc.png" style="width: 150px"></span>
+            </div>
+        </div>
+        <span class="mob copyright">© 2020 Tata Consultancy Services Limited. All Rights Reserved. </span>
+    </footer>
+
+
+
+
+		
+		<div class="popup" id="popup" style="display: none">
+			<div class="login_container" id="popup_container">
+				<div class="container">
+					
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var countdownInterval = undefined;
+			var contestEndedValue = 1;
+			var resetFlag='f';
+			
+			function counter(timeString){
+				endTime = new Date(timeString);
+				var localtime=new Date();
+				var offset=localtime.getTimezoneOffset();
+				var serveroffset=-330;
+				var difference=serveroffset-offset;    // In minutes
+				var offsetInMilliseconds=difference*60*1000;    //In Milliseconds
+				var longTime = ((endTime.getTime()+ offsetInMilliseconds)- localtime.getTime()) / 1000;
+				if(longTime >=0){
+					$('.timer #second').html( ((longTime % 60 < 10) ? "0" : "") + parseInt(longTime % 60));
+					longTime /= 60;
+					$('.timer #minute').html( ((longTime % 60 < 10) ? "0" : "") + parseInt(longTime % 60));
+					longTime /=60;
+					$('.timer #hour').html( ((longTime % 24 < 10) ? "0" : "") + parseInt(longTime % 24));
+					/* $('.timer #hour').html( ((longTime % 24 < 10) ? "0" : "") + parseInt(longTime )); */
+				}
+				else{
+					$('.timer #hour').html("00");
+					$('.timer #minute').html("00");
+					$('.timer #second').html("00");
+					clearInterval(countdownInterval);
+				}
+			}
+			
+	function calcTime(city, offset) {
+
+    // create Date object for current location
+    d = new Date();
+    
+    // convert to msec
+    // add local time zone offset 
+    // get UTC time in msec
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    
+    // create new Date object for different city
+    // using supplied offset
+    nd = new Date(utc + (3600000*offset));
+    
+    // return time as a string
+    return nd.toLocaleString();
+
+}
+	// Nisha
+	function refreshSubmissions(){
+		var txt;
+		var r = confirm("This will delete all your submissions and you will be able to start the contest again. Click ok to confirm");
+				
+		if(r == true) {
+			$.ajax({
+					url: './DeleteSubmissions',
+					type: 'get',
+					data: {"entity":"resetMySubmissions" },
+					 success: function(data){								
+						if(data != null ) {
+							alert("Contest reset successfully, Please login again to start contest");
+							window.location.href="./logout.jsp";
+						}
+						else
+							alert("Reset submissions failed, please try after sometime");
+					}
+			}); 
+		}
+	}
+			
+			
+			$(document).ready(function(){
+				//alert("User reset flag "+resetFlag);
+				//alert("contest value "+contestEndedValue);
+				if(window.endTime == undefined){
+					$('.timer .num, .timer .desc').css('display','none');
+					$('.timer').append('<span class="wish">All the Best</span>');
+					setMainContent('guidelines');
+				}
+				else if(contestEndedValue == 2){
+					$('.timer .num, .timer .desc').css('display','none');
+					if(resetFlag != null && resetFlag == 't') // Check user reset flag for reset option - Nisha
+						$('.timer').append('<span class="wish" style="font-weight: 700">Your Contest has Ended, <a href="javascript:refreshSubmissions()">Click here<a> to start again</span>');
+					else
+						$('.timer').append('<span class="wish" style="font-weight: 700">Your Contest has Ended</span>');
+					setMainContent('guidelines');
+				}
+				else{
+					$('.navigation li').css({'display':'block'});
+					counter(window.endTime);
+					setMainContent('coding_area');
+				}
+				
+				var watchEndTime = setInterval(function(){
+					if(window.endTime != undefined){
+						$('.navigation li').css({'display':'block'});
+						if(contestEndedValue == 1 ){
+							console.log(window.endTime + " : Got It");
+							clearInterval(watchEndTime);
+							$('.timer .num, .timer .desc').css('display','inline-block');
+							$('.timer .wish').css('display','none');
+							counter(window.endTime);
+							countdownInterval = setInterval(function(){
+								counter(window.endTime);
+							}, 500);
+						}
+					}
+				}, 1000);
+				/*alert('Try s');
+				$('#links').tagit();
+				alert('Try f');*/
+			});
+
+			$('.main-container .navigation li').click(function(){
+				//if(!$(this).hasClass('active'))
+				//{
+					var lists = $('.main-container .navigation li');
+					for(i=0;i<lists.length;i++) $(lists[i]).removeClass('active');
+					$(this).addClass('active');
+					clearInterval(window.time_left_interval_var);
+					setMainContent($(this).attr('id'));
+				//}
+			});
+
+			function setMainContent(id){
+				$.ajaxSetup({'cache': true});
+				setMainHeading( $('.main-container .navigation li#'+id).html() );
+				var main_content = $('.main-container .section #main-content');
+				if(id.localeCompare('guidelines') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './guidelines.jsp',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('coding_area') == 0){
+					setLoader(true);
+					$.ajax({
+						cache: true,
+						url: './StartCoding',
+						type: 'get',
+						async: false,
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('compile_run') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './ChkExecuteServlet',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('submissions') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './ChkSubmissionServlet',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('team_submissions') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './ChkTeamSubmissionServlet',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				/* Added by Nisha - Unevaluated submissions - Begin*/
+				else if(id.localeCompare('unevaluated') == 0){
+					//alert("Unevaluated");
+					setLoader(true);
+					$.ajax({
+						url: './ChkUnEvaluatedServlet',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('history') == 0){
+					//alert("Unevaluated");
+					setLoader(true);
+					$.ajax({
+						url: './ChkHistoryServlet',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				/* Added by Nisha - Unevaluated submissions - end */
+				else if(id.localeCompare('feedback') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './feedback.jsp',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('selfHelpQuiz') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './CVSelfQuiz.html',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('result') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './result.jsp',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+				else if(id.localeCompare('your_team') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './Team',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}else if(id.localeCompare('msg') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './msg.jsp',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}else if(id.localeCompare('livedashboard') == 0){
+					setLoader(true);
+					$.ajax({
+						url: './livestatus.jsp',
+						type: 'get',
+						success: (html)=>{ $(main_content).html(html); }
+					});
+				}
+
+				if(!$('.main-container .navigation li#'+id).hasClass('active')) $('.main-container .navigation li#'+id).addClass('active');
+			}
+
+			function setMainHeading(value){
+				$('.main-container #the-heading').html(value);
+			}
+
+			function setLoader(bool_value){
+				if(bool_value){
+					$('#main-content').html('');
+					var container = $('<div class="loader_main"></div>');
+					container.append('<span class="letter" style="animation-delay: 0s; -webkit-animation-delay: 0s">L</span>');
+					container.append('<span class="letter" style="animation-delay: 0.25s; -webkit-animation-delay: 0.25s">.</span>');
+					container.append('<span class="letter" style="animation-delay: 0.5s; -webkit-animation-delay: 0.5s">O</span>');
+					container.append('<span class="letter" style="animation-delay: 0.75s; -webkit-animation-delay: 0.75s">.</span>');
+					container.append('<span class="letter" style="animation-delay: 1s; -webkit-animation-delay: 1s">A</span>');
+					container.append('<span class="letter" style="aUsernimation-delay: 1.25s; -webkit-animation-delay: 1.25s">.</span>');
+					container.append('<span class="letter" style="animation-delay: 1.5s; -webkit-animation-delay: 1.5s">D</span>');
+					container.append('<span class="letter" style="animation-delay: 1.75s; -webkit-animation-delay: 1.75s">.</span>');
+					container.append('<span class="letter" style="animation-delay: 2s; -webkit-animation-delay: 2s">I</span>');
+					container.append('<span class="letter" style="animation-delay: 2.25s; -webkit-animation-delay: 2.25s">.</span>');
+					container.append('<span class="letter" style="animation-delay: 2.5s; -webkit-animation-delay: 2.5s">N</span>');
+					container.append('<span class="letter" style="animation-delay: 2.75s; -webkit-animation-delay: 2.75s">.</span>');
+					container.append('<span class="letter" style="animation-delay: 3s; -webkit-animation-delay: 3s">G</span>');
+					$('#main-content').html(container);
+				}
+			}
+
+			function launchReport() {
+				my_window = window.open("graphs.jsp", "my", "scrollbars=1,status=1,width=1102,height=750,top=0,left=0,toolbar=no, menubar=no");
+			}
+			
+			function launchSelfHelpQuizPage()
+			{
+				my_window = window.open("CVSelfQuiz.html", "my", "scrollbars=1,status=1,width=1102,height=800,top=0,left=0,toolbar=no, menubar=no");
+			}
+			
+			function showSessionTimeOutError(){
+				$('#popup').css('display','grid');
+				$.get('./modules/notification_popup.jsp', function(html){
+					$('#popup .container').html(html);
+					$('#popup .container h1').html('Somebody was not here');
+					setMessage('Session Timed Out. Please Login Again.');
+					$('#popup .container #okay').click(()=>{
+						window.location = './index.jsp';
+					});
+				});
+			}
+
+			function showCustomError(heading, message){
+				$('#popup').css('display','grid');
+				$.get('./modules/notification_popup.jsp', function(html){
+					$('#popup .container').html(html);
+					$('#popup .container h1').html(heading);
+					setMessage(message);
+					$('#popup .container #okay').click(()=>{
+						$('.navigation #guidelines').click();
+					});
+				});
+			}
+		</script>
+	
+	
+		
+		<script type="text/javascript">
+		
+			jQuery(window).load(function () {//alert('window loaded');
+									$.when(
+									$.getScript( "JS/code_editor/tag-it.js" ),
+									$.Deferred(function( deferred ){
+										$( deferred.resolve );
+									})
+									).done(function()
+									{//alert('3');
+										//console.log( "tag-it JS"+textStatus );
+										//alert("#links="+$("#links").length);
+										var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+										//'((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+										'((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+										'((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+										'(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+										'(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+										'(\#[-a-z\\d_]*)?$','i'); // fragment locator
+										$("#links").tagit({
+											afterTagAdded: function addTag (event,ui){
+												//alert("HOLA"+ui.tagLabel);
+												var urlTest = pattern.test(ui.tagLabel);
+												var currTag = ui.tagLabel;
+												
+											  //alert(urlTest);
+											  if(!urlTest)
+											  {
+												//alert('invalid URL:'+currTag);
+												$('body').notification("error","invalid URL:"+currTag);
+												$('#links').tagit('removeTagByLabel', currTag);
+												//jQuery.Event("keydown", { keyCode: 20 });
+											  }
+											}
+										});
+										console.log('tagit initialized');
+									});
+								/*}).done(function( script, textStatus ) {
+								console.log( "jqueryUI JS"+textStatus );
+							  });
+						}).done(function( script, textStatus ) {
+					console.log( "jquery JS"+textStatus );
+				  });
+					}, 600);*/
+					
+			});
+			
+			//Below code by Mitul to disable Left Click (ultimately inspect element) and disable firebug (F12)
+			$(document).keydown(function(event){
+				if(event.keyCode==123){
+				//alert('F12 is disabled');
+				$('body').notification("error","F12 is disabled");
+					return false;
+				}
+				else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+					//alert('This is disabled');
+					$('body').notification("error","This is disabled");
+					return false;
+				}
+			});
+
+			$(document).on("contextmenu",function(e){        
+			   //alert('right click is disabled');
+			   $('body').notification("error","Right click is disabled");
+			   e.preventDefault();
+			});
+		</script>
+		
+		
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all tagit-autocomplete" id="ui-id-1" tabindex="0" style="display: none;"></ul><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all tagit-autocomplete" id="ui-id-2" tabindex="0" style="display: none;"></ul></body></html>
+<!-- Popup Container for Login(Edited : Ashik Unni A) -->

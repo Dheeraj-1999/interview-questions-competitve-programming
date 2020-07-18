@@ -1,0 +1,42 @@
+@import url('../fonts.css');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header.header{
+	padding: 15px;
+	background: #000;
+	color: #fff;
+	font-family: 'Roboto';
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+.header .right_pane{
+	text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .right_pane > a > img{
+	width: 35px;
+	transition: transform 0.3s;
+}
+
+.header .right_pane > a > img:hover{
+	transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+}
+
+.header .right_pane > .name{
+	display: inline-block;
+	margin-right: 10px;
+	text-transform: capitalize;
+	font-size: 25px;
+	color: #bbb;
+}
