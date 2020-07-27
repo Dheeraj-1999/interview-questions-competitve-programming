@@ -48,6 +48,8 @@ int coinChangeDp(int* S, int m, int n) {
     // is constructed in bottom up 
     // manner using the base case 0 
     // value case (n = 0) 
+    // n is the number of coins
+    // m is the change needed ie 5 (1+2+1+1)......................
     int i, j, x, y;
     int table[n + 1][m]; 
       
@@ -56,13 +58,13 @@ int coinChangeDp(int* S, int m, int n) {
     for (i = 0; i < m; i++) 
         table[0][i] = 1; 
   
-    for(int i=0; i<m+1; i++) {
-        for(int j=0; j<n+1; j++) {
-            cout << table[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
+    // for(int i=0; i<m+1; i++) {
+    //     for(int j=0; j<n+1; j++) {
+    //         cout << table[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+    // cout << endl;
     // Fill rest of the table entries  
     // in bottom up manner  
     for (i = 1; i < n + 1; i++) 

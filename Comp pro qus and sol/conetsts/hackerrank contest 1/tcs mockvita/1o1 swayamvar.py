@@ -1,6 +1,5 @@
 import collections
 
-import collections
 def swayamvar(brides, grooms, n):
     brides = collections.deque(brides)
     grooms = collections.deque(grooms)

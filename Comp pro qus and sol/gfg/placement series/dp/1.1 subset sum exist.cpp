@@ -51,7 +51,6 @@ bool subsetSumDp(int* arr, int sum, int n) {
 }
 
 
-
 int main(int argc, char const *argv[])
 {
     int n,sum;
