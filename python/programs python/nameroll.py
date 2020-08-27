@@ -1,0 +1,6 @@
+roll=input("enter your roll number")
+name=input("enter your name")
+f=open("myfile.txt","a")
+#f.write("roll:\t name:")
+f.write("\n"+str(roll)+"\t"+str(name))
+f.close()
