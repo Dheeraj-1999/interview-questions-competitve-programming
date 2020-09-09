@@ -21,16 +21,6 @@ void traversal(Node* root) {
     traversal(root->right);
 }
 
-Node* build3Nodes(int d1, int d2, int d3) {
-    Node *root = new Node(d1);
-    Node *child1 = new Node(d2);
-    Node *child2 = new Node(d3);
-    root->left = child1;
-    root->right = child2;
-    return root;
-}
-
-
 Node* buildTree() {
     int data;
     cin >> data;
@@ -45,24 +35,25 @@ Node* buildTree() {
     return root;
 }
 
-void insertNode(Node* root, int data) {
-    // int data;
-    // cin >> data;
-    if(root->left == NULL) {
-        root->left = new Node(data); 
-        return;
-    }
+void BFT(Node* root) {
+    queue<Node*> q;
+    // Node* temp = root;
+    q.push(root);
+    while(!q.empty()) {
+        Node* temp = q.front();
+        cout << temp->data << " ";
+        q.pop();
 
-    else if(root->right == NULL) {
-        root->right = new Node(data); 
-        return;
+        if(temp->left != NULL) {
+            q.push(temp->left);
+        }
+        if(temp->right != NULL) {
+            q.push(temp->right);
+        }
     }
-    else{
-        insertNode(root->left, data);
-        insertNode(root->right, data);
-    }
-    
+    return;
 }
+
 
 int main(int argc, char const *argv[])
 {
@@ -72,12 +63,7 @@ int main(int argc, char const *argv[])
     // Node* root = build3Nodes(d1, d2, d3);
 
     Node* root = buildTree();
-
-    traversal(root);
-    cout << "insert:";
-    
-    insertNode(root, 50);
-    traversal(root);
-    
+    BFT(root);
+    traversal(root);    
     return 0;
 }
