@@ -32,19 +32,19 @@ Node* build3Nodes(int d1, int d2, int d3) {
 }
 
 
-Node* buildTree() {
-    int data;
-    cin >> data;
+    Node* buildTree() {
+        int data;
+        cin >> data;
 
-    if(data == -1) {
-        return NULL;
+        if(data == -1) {
+            return NULL;
+        }
+
+        Node* root = new Node(data);
+        root->left = buildTree();
+        root->right = buildTree();
+        return root;
     }
-
-    Node* root = new Node(data);
-    root->left = buildTree();
-    root->right = buildTree();
-    return root;
-}
 void BFT(Node* root, int data) {
     queue<Node*> q;
     // Node* temp = root;
