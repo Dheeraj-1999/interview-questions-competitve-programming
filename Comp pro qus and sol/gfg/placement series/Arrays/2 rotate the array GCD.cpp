@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// juggling array prblm................
+
+// https://www.youtube.com/watch?v=utE_1ppU5DY
+
 int* rotateArray(int* arr, int n, int k) {
     for(int i=1; i<=n; i++) {
         int nuSets = __gcd(n, k);
