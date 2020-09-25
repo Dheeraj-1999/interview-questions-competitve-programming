@@ -1,28 +1,78 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class List {
+class node {
     public:
         int data;
-        int* address;
+        node* address;
 
-    List(int d) {
+    node(int d) {
         data = d;
         address = NULL;
     }
 };
+// ******************** implementation ***********************************
+
+// Linked List class
+/*
+class LinkedList {
+    node* head;
+    node* tail;
+
+
+    void insert() {
+
+    }
+
+};
+*/
+// or 
+
+// implement using functions
+
+// insert----------------------- {a: insert at head}
+                                // {a: insert at tail}
+                                // {a: insert in b/w}
+
+void insertAtHead(node* &head, int d) { //passing a pointer by refernce
+    if(head == NULL) {
+        head = new node(d);
+        return;
+    }
+    node* firstNode = new node(d);
+    firstNode->address = head; // ..........or........ (*firstNode).address = head
+    head = firstNode;
+}
+
+void insertAtTail(node* &tail, int d) { //passing a pointer by refernce
+    if(tail == NULL) {
+        tail = new node(d);
+        return;
+    }
+    node* lastNode = new node(d);
+    tail->address = lastNode; // ..........or........ (*head).address ie(NULL) =  lastNode
+    tail = lastNode;
+}
+
+void print(node* head) {
+    while(head != NULL) {
+        cout << head->data << " ";
+        head = head->address;
+    }    
+}
 
 int main(int argc, char const *argv[])
 {
-    cout << " enter the four digit number with space" << endl ;
-    int digit;
-    cin >> digit;
-    List *head = new List(digit);
-    for (int i=1; i<4; i++){
-        cin >> digit;
-        List *node = new List(digit);
-        
-    }
-    
-    return 0;
+
+    node* head = NULL;
+    insertAtHead(head, 1);
+    node* tail = head;
+    insertAtHead(head, 9);
+    insertAtHead(head, 9);
+    insertAtHead(head, 9);
+    insertAtTail(tail, 9);
+    insertAtTail(tail, 9);
+    insertAtTail(tail, 9);
+    insertAtTail(tail, 9);
+    print(head);
 }
