@@ -54,6 +54,34 @@ void insertAtTail(node* &tail, int d) { //passing a pointer by refernce
     tail = lastNode;
 }
 
+int length(node* head) {
+    int cnt = 0;
+    while(head->address) {
+        cnt++;
+        head = head->address;
+    }
+    return cnt;
+}
+void insertInMiddle(node* head, int d, int p) {
+    if(head == NULL or p == 0) {
+        insertAtHead(head, d);
+        return;
+    }
+    else if(p > length(head)) {
+        insertAtTail(head, d);
+    } else {
+        int jump = 1;
+        while(jump != p-1) {
+            head = head->address;
+            jump ++;
+        }
+
+        node* n = new node(d);
+        n->address = head->address;
+        head->address = n;
+    }
+}
+
 void print(node* head) {
     while(head != NULL) {
         cout << head->data << " ";
@@ -74,5 +102,7 @@ int main(int argc, char const *argv[])
     insertAtTail(tail, 9);
     insertAtTail(tail, 9);
     insertAtTail(tail, 9);
+
+    insertInMiddle(head, 100, 4);
     print(head);
 }
