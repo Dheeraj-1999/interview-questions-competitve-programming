@@ -14,6 +14,7 @@ void do_maxhipify(int* arr, int i, int n) {
         swap(arr[largest], arr[i]);
         do_maxhipify(arr, largest, n);
     }
+    return;
 }
 
 void buildHeap(int* arr, int n) {
