@@ -12,15 +12,15 @@ void printNto1(int b) {
     if(b == 0)
         return;
     cout << b << " "; 
-    print1ton(b-1);
+    printNto1(b-1);
 }
 
 int main(int argc, char const *argv[])
 {
     int n;
     cin >> n;
-    print1ton(n);
-    cout << endl;
+    // print1ton(n);
+    // cout << endl;
     printNto1(n);
     return 0;
 }
