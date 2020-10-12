@@ -8,9 +8,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int firstWindowMax(int* arr, int k) {
-    maxi = INT_MIN;
-    for(int i=0; i<k; i++) {
+int firstWindowMax(int* arr, int i, int k) {
+    int maxi = INT_MIN;
+    for(k=i; i<k+i; i++) {
         maxi = max(arr[i], maxi);
     }
     return maxi;
@@ -20,15 +20,11 @@ void  maxOfAllSubs(int* arr, int n, int k) {
 
     int p1, p2;
     int firstMax;
-    firstMax = firstWindowMax(arr, k);
+    firstMax = firstWindowMax(arr, 0, k);
     p1 = 0;
     p2 = k;
-    for(int i=1; i<n; i++) {
-        if(arr[p2] > firstMax) {
-            firstMax = arr[p2];
-        }
-        p2++;
-        p1++;
+    for(int i=0; i<n-k; i++) {
+        firstWindowMax(arr, i, k);
     }
 
 }
