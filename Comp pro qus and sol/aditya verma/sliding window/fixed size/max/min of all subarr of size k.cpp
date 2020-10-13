@@ -8,24 +8,26 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int firstWindowMax(int* arr, int i, int k) {
+int WindowMax(int* arr, int i, int ws) {
     int maxi = INT_MIN;
-    for(k=i; i<k+i; i++) {
-        maxi = max(arr[i], maxi);
+    for(int k=i; k<ws+i; k++) {
+        maxi = max(arr[k], maxi);
     }
     return maxi;
 }   
 
 void  maxOfAllSubsnsquare(int* arr, int n, int k) {
 
-    int p1, p2;
-    int firstMax;
-    firstMax = firstWindowMax(arr, 0, k);
-    p1 = 0;
-    p2 = k;
-    for(int i=0; i<n-k; i++) {
-        firstWindowMax(arr, i, k);
+    // firstMax = firstWindowMax(arr, 0, k);
+    for(int i=0; i<n-k+1; i++) {
+        cout << WindowMax(arr, i, k) << " ";
     }
+
+}
+
+
+void maxOfAllSubOptimized(int* arr, int n, int k) {
+    
 
 }
 
@@ -39,6 +41,6 @@ int main(int argc, char const *argv[])
     for(int i=0; i<n; i++)
         cin >> arr[i];
 
-    maxOfAllSubs(arr, n, k);    
+    maxOfAllSubsnsquare(arr, n, k);    
     return 0;
 }
