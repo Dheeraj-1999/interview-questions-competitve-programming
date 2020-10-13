@@ -16,7 +16,7 @@ int firstWindowMax(int* arr, int i, int k) {
     return maxi;
 }   
 
-void  maxOfAllSubs(int* arr, int n, int k) {
+void  maxOfAllSubsnsquare(int* arr, int n, int k) {
 
     int p1, p2;
     int firstMax;
