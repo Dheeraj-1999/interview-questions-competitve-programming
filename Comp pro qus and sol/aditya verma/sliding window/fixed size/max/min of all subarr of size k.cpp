@@ -29,13 +29,13 @@ void  maxOfAllSubsnsquare(int* arr, int n, int k) {
 
 void maxOfAllSubOptimized(int* arr, int n, int k) {
     deque<int> q;
-     cout << q.front() << " ";
+    //  cout <<"he " << q.front() << " ";  
     for(int i=0; i<k; i++) {
         while( (!q.empty()) and arr[q.back()] <= arr[i] ) {
             q.pop_back();
         }
         q.push_back(i);
-        cout << q.front() << " ";
+        // cout << q.front() << " ";
     }
 
     // cout << q.front() << " ";
