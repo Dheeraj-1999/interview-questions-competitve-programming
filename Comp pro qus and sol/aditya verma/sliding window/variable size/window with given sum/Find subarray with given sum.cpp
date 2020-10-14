@@ -1,25 +1,27 @@
 
-
-
-
 #include<bits/stdc++.h>
 using namespace std;
 
-pair<int, int> WindowSum(int* arr, int sum, int n) {
+pair<int, int> WindowSum(int* arr, int sm, int n) {
 
-    sort(arr, arr+n);
+    // sort(arr, arr+n);
     int i=0, j=0;
     int temp = 0;
-    for(int i=0; i<n; i++) {
-        temp += arr[i];
-        if(temp == sum)
+    while(i < n and j < n) {
+        
+        if(temp == sm){
+            // cout << i << " " << j << endl;
             return(make_pair(i, j));
-        else if(temp < sum) {
+        }
+        else if(temp < sm) {
+            temp += arr[j];
             j++;
         }
         else {
+            temp -= arr[i];
             i++;
         }
+        cout << temp << " ";
     }
     
 }   
@@ -33,7 +35,7 @@ int main(int argc, char const *argv[])
     int* arr = new int[n+1];
     for(int i=0; i<n; i++)
         cin >> arr[i];
-
-    WindowSum(arr, k, n);    
+    pair<int, int> p = WindowSum(arr, k, n);
+    cout << endl << p.first << " " << p.second;    
     return 0;
 }
