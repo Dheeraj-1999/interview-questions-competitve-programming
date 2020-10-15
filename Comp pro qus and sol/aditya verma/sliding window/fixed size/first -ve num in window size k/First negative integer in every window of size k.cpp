@@ -11,15 +11,18 @@ void findFirstNeg(int* arr, int k, int n) {
 
     int curr = 0;
     for(int i=0; i<n-k+1; i++) {
-        if(i == q.front()) {
-            cout << arr[q.front()];
-            q.pop();
-        }
-        else if(i < q.front()) {
-            cout << arr[q.front()];
+        if(q.empty() or q.front() > (i+k-1))
+            cout << "0" << " ";
+        else {
+            if(i == q.front()) {
+                cout << arr[q.front()] << " ";
+                q.pop();
+            }
+            else if(i < q.front()) {
+                cout << arr[q.front()] << " ";
+            }
         } 
-
-        if(q.empty())
+        
     }
 }   
 
