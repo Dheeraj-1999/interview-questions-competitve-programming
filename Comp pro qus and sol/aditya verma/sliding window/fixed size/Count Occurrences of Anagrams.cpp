@@ -33,6 +33,7 @@ void calcAnagrams(string str, string word, int n, int k) {
         if(!flag)
             count += 1;
     }
+    cout << count << endl;
 }
 
 int main(int argc, char const *argv[])
@@ -41,7 +42,10 @@ int main(int argc, char const *argv[])
     string str, word;
     cin >> str >> word;
 
-    
+    int n = str.length();
+    int k = word.length();
+
+    calcAnagrams(str, word, n, k);
     
     return 0;
 }
