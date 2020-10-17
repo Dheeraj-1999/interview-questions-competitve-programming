@@ -16,26 +16,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void calcAnagrams(string str, string word) {
-    
-    map<char, int> original;
-    for(int i=0; i<word.length(); i++) 
-        original[word[i]] += 1;
-
-
-    int k = word.length();
-    map<char, int> temp;
-
-    for(int i=0; i<k; i++) {
-        temp[str[i]] += 1;
+void calcAnagrams(string str, string word, int n, int k) {
+    map<char, int> origin;
+    for(int i=0; i<word.length(); i++) {
+        origin[word[i]] += 1;
     }
     int count = 0;
-    for(int i=0; i<k; i++) {
-        if(temp[str[i]] != original[word[i]])
-            break;
+    for(int i=0; i<n-k+1; i++) {  
+        bool flag = false;  
+        for(int j=i; j<i+word.length(); j++) {
+            if(origin[str[j]] != 1) {
+                flag = true;
+                break;
+            }
+        }
+        if(!flag)
+            count += 1;
     }
-    count += 1;
-    //
 }
 
 int main(int argc, char const *argv[])
