@@ -7,7 +7,7 @@ def SieveOfEratosthenes(a, n):
 	# all entries it as true. A value in prime[i] will 
 	# finally be false if i is Not a prime, else true. 
 	prime = [True for i in range(n+1)] 
-	pRange = []
+	# pRange = []
 	p = 2
 	while (p * p <= n): 
 		

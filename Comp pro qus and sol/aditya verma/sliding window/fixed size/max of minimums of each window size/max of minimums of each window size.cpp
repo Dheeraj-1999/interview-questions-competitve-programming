@@ -3,7 +3,7 @@ using namespace std;
 
 vector<int> findMinsSizei(int* arr, int n, int k) {
     vector<int> ans;
-
+    
     // deque<int> dq(k);
     deque<int> q;
     //  cout <<"he " << q.front() << " ";  
@@ -38,22 +38,30 @@ vector<int> findMinsSizei(int* arr, int n, int k) {
 }
 
 void maxOfMins(int* arr, int n) {
-    
+    int maxMinArr = INT_MIN;
     for(int i=1; i<=n; i++) {
         vector<int> minArr;
         minArr = findMinsSizei(arr, n, i);
-        // int maxMinArr = INT_MIN;
-        // for(int i=0; i<minArr.size(); i++ ) {
-        //     maxMinArr = max(minArr[i], maxMinArr);
-        // }
-        // cout << maxMinArr << " ";
-        for(int i=0; i<minArr.size(); i++ ) {
-            // maxMinArr = max(minArr[i], maxMinArr);
-            cout << minArr[i] << " ";
+        maxMinArr = INT_MIN;
+        for(int j=0; j<minArr.size(); j++ ) {
+            maxMinArr = max(minArr[i], maxMinArr);
         }
-        cout << endl;
+        cout << maxMinArr << " ";
+        // for(int j=0; j<minArr.size(); j++ ) {
+        //     maxMinArr = max(minArr[j], maxMinArr);
+        //     cout << minArr[i] << " ";
+        // }
+        // cout << endl;
     }
     
+    int mini = INT_MAX;
+    for(int i=0; i<n; i++) {
+        mini = min(arr[i], mini);
+    }
+    // ans.push_back(mini);
+    cout << mini;
+    
+    // cout << maxMinArr << " ";
 }
 
 int main(int argc, char const *argv[])
