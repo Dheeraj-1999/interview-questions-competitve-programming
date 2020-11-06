@@ -9,13 +9,13 @@ struct node{
 
 void display(){
 	while(address!=null){
-		print data
+		cout << data;
 	}
 	
 }
 void push(struct node * head_ref){
 	struct node *b,*a;
-	b=head_ref
+	b=head_ref;
 	int new_data;
 	cout<<"enter the next node value";
 	cin>>new_data;
