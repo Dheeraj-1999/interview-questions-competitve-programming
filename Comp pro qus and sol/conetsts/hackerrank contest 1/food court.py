@@ -48,10 +48,13 @@ def solve(arr):
         for j in range(i+1):
             temp.append(0)
         for j in range(i+1, len(arr)):
-            temp.append(arr[i]* arr[j])
+            if(arr[i] != arr[j]):
+                temp.append(arr[i]* arr[j])
+            else:
+                temp.append(0)
         matrix.append(temp)
 
-    
+
     kdaneMatrix = []
     for i in range(1, len(arr)):
         p = 0
@@ -63,7 +66,7 @@ def solve(arr):
             q -= 1
         kdaneMatrix.append(temp)
     
-    for i in range(1, len(arr)-1):
+    for i in range(0, len(arr)-1):
         p = i
         q = len(arr)-1
         temp = []
@@ -73,7 +76,7 @@ def solve(arr):
             q -= 1
         kdaneMatrix.append(temp)
     # print(matrix)
-    # print(kdaneMatrix)
+    print(kdaneMatrix)
     applyKdane(kdaneMatrix)
 
 arr = [int(u) for u in input().split(" ")]
