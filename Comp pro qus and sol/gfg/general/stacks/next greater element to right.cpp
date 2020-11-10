@@ -2,7 +2,7 @@
 using namespace std;
 
 
-void nextGreater(int* arr, int n) {
+void nextGreaterRight(int* arr, int n) {
     stack<int> stk;
     stack<int> ans;
     for(int i=n-1; i>=0; i--) {
@@ -34,6 +34,6 @@ int main(int argc, char const *argv[])
 
     for(int i=0; i<n; i++)
         cin >> arr[i]; 
-    nextGreater(arr, n);   
+    nextGreaterRight(arr, n);   
     return 0;
 }
