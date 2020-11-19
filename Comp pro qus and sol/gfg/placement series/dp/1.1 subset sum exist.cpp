@@ -29,9 +29,9 @@ bool subsetSumDp(int* arr, int sum, int n) {
         }
     }
 
-    for(int i=1; i<n; i++) {
-        for(int j=1; j<sum; j++) {
-            if(arr[i-1] <= sum) {
+    for(int i=1; i<=n; i++) {
+        for(int j=1; j<=sum; j++) {
+            if(arr[i-1] <= j) {
                 int opt1 = dp[i-1][j-arr[i-1]]; //include the number
                 int opt2 = dp[i-1][j]; // exclude the number
                 dp[i][j] = opt1 or opt2;
