@@ -76,7 +76,7 @@ def solve(arr):
             q -= 1
         kdaneMatrix.append(temp)
     # print(matrix)
-    print(kdaneMatrix)
+    # print(kdaneMatrix)
     applyKdane(kdaneMatrix)
 
 arr = [int(u) for u in input().split(" ")]
