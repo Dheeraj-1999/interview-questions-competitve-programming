@@ -8,3 +8,7 @@
 
 
 [love babbar sde sheet](https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view)
+
+``` TO-DO & Pending Questions Leetcode```
+- 605 Can place flower -> greedy -> easy -> facing problem in one end condition.
+- 342 power of 4 -> bit manipulation ->easy -> brute force done, bit manipulation pending.
