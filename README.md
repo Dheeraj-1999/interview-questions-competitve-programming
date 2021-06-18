@@ -6,6 +6,7 @@
 
 [SDE interview questions sheet streiver](https://docs.google.com/document/d/1SM92efk8oDl8nyVw8NHPnbGexTS9W-1gmTEYfEurLWQ/edit)
 
+[Leed Coding: 250 questions leetcode](https://github.com/Dheeraj-1999/images/blob/master/Leetcode%20DSA%20sheet%20by%20Fraz%20-%20Sheet1.pdf)
 
 [love babbar sde sheet](https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view)
 
