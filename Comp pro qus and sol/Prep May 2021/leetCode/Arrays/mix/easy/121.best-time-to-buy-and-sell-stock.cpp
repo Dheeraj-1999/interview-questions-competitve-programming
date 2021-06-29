@@ -22,6 +22,9 @@ public:
         // }
         // return rslt;  
         
+
+// logic ==> maxProfit = arr[i] - minimum to the left!
+// https://www.youtube.com/watch?v=XIWykOHE1SE
         int profit = 0;
         int mini = INT_MAX;
         
